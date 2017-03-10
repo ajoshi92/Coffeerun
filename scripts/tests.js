@@ -43,3 +43,10 @@ QUnit.test('printOrdersTest ok test', function(assert) {
 QUnit.test('printOrdersTest ok test', function(assert) {
     assert.equal(myTruck.deliverOrderTest('abc@bond.com'), undefined, 'Passed!');
 });
+
+
+/*------- Problem faced-------
+myTruck object when it was called in test.js was initially was showing not defined.
+To use printOrders we needed to return the values in the customerIdArray
+so that the test.js can catch the values and display them.
+*/
